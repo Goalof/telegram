@@ -25,6 +25,7 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#7240FF"} />
 		</Helmet>
 		<Components.EmbedHTML />
+		<Components.EmbedJS />
 		<Section
 			padding="50px 0 50px 0"
 			position="relative"
@@ -428,6 +429,9 @@ based in Kazakhstan{"\n\n\n\n"}
 			<style place={"endOfHead"} rawKey={"61ded21593089d001f40f0a3"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
 			</style>
+			<script place={"endOfBody"} rawKey={"62a098b0c2b1264f52078081"}>
+				{"      function soundClick() {\n  \tvar audio = document.getElementById('audio');\n        audio.play();\n    }\n"}
+			</script>
 		</RawHtml>
 	</Theme>;
 });

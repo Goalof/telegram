@@ -4,5 +4,6 @@ export { default as QuarklycommunityKitMobileSidePanel } from "./Quarklycommunit
 export { default as BlockMail } from "./BlockMail"
 export { default as Footer } from "./Footer"
 export { default as EmbedHTML } from "./EmbedHTML"
+export { default as EmbedJS } from "./EmbedJS"
 export { default as QuarklycommunityKitLoopText } from "./QuarklycommunityKitLoopText"
 export { default as QuarklycommunityKitVimeo } from "./QuarklycommunityKitVimeo"
