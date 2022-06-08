@@ -139,10 +139,10 @@ export default (() => {
 		<Components.Footer />
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"61ded21593089d001f40f0a3"}>
-				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
+				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}\n\ndiv[class*=\"bgmusic\"] { \n    cursor: pointer;\n    z-index:99 !important;\n}"}
 			</style>
 			<script place={"endOfBody"} rawKey={"62a098b0c2b1264f52078081"}>
-				{"      function soundClick() {\n  \tvar audio = document.getElementById('audio');\n        audio.play();\n    }\n"}
+				{"$(document).ready(function(){\nmyAudio=document.getElementById(\"bg-sound\");\nlet fadeTime = 300;//Врямя смены иконок\nmyAudio.volume=0.4;//Задаём громкость\n$(\".stopbgmusic\").hide();\n$(\".playbgmusic\").click(function(e) {\n    myAudio.play(); $(this).fadeOut(fadeTime);\n    $(\".stopbgmusic\").fadeIn(fadeTime);\n})\n$(\".stopbgmusic\").click(function(e) {e.preventDefault();\n    myAudio.pause();  $(this).fadeOut(fadeTime);\n    $(\".playbgmusic\").fadeIn(fadeTime);\n});\n$(\"#bg-sound\").on(\"ended\", function() {\n    $(\".stopbgmusic\").fadeOut(fadeTime);\n    $(\".playbgmusic\").fadeIn(fadeTime);\n});\n});"}
 			</script>
 		</RawHtml>
 	</Theme>;
