@@ -423,7 +423,7 @@ based in Kazakhstan{"\n\n\n\n"}
 		</Section>
 		<Components.BlockMail />
 		<Components.Footer />
-		<Components.QuarklycommunityKitAudio autoPlay src="https://ukit.top/c329a3c28705add.mp3" />
+		<Components.QuarklycommunityKitYouTube autoplay url="https://www.youtube.com/watch?v=xOz12E7ofQw" loop />
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"61ded21593089d001f40f0a3"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}\n\ndiv[class*=\"bgmusic\"] { \n    cursor: pointer;\n    z-index:99 !important;\n}"}
